@@ -54,18 +54,12 @@
 <div class="cartback" id="cartBack" role="dialog" aria-modal="true" aria-label="Shopping bag"><aside class="cart"><div class="carthead"><h2 style="margin:0">Your bag <span class="acid" id="cartCount">[0]</span></h2><button class="outline" id="closeBag">Close ×</button></div><div id="cartItems"></div><div class="subtotal"><span>Subtotal</span><strong id="subtotal">£0.00</strong></div><p class="tiny">Shipping and taxes are calculated at checkout.</p><button class="outline full" id="checkout">Continue to checkout ↗</button><p class="notice" id="cartNote">This is a preview store. Checkout must be connected before taking real orders.</p></aside></div>
 <script>
 const catalog=[
-{id:1,name:"After Dark Tee",cat:"TEES",price:32,img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85",tag:"FIRST DROP"},
-{id:2,name:"Rotten Angel Hoodie",cat:"HOODIES",price:68,img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85",tag:"BESTSELLER"},
-{id:3,name:"Low Rise Baggy Denim",cat:"DENIM",price:76,img:"https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85",tag:"ARCHIVE FIT"},
-{id:4,name:"No Signal Tee",cat:"TEES",price:32,img:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=85",tag:"NEW"},
-{id:5,name:"Chrome Star Shoulder Bag",cat:"ACCESSORIES",price:42,img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85",tag:"LIMITED"},
-{id:6,name:"Nightshift Cargo Pants",cat:"DENIM",price:68,img:"https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?auto=format&fit=crop&w=800&q=85",tag:"UTILITY"},
-{id:7,name:"Static Burn Long Sleeve",cat:"TEES",price:38,img:"https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=85",tag:"NEW DROP"},
-{id:8,name:"Fallen Angel Zip Hoodie",cat:"HOODIES",price:76,img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85",tag:"CHROME PRINT"},
-{id:9,name:"Ripped Black Denim",cat:"DENIM",price:84,img:"https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85",tag:"DISTRESSED"},
-{id:10,name:"Night Terror Cargo Trousers",cat:"PANTS",price:72,img:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85",tag:"UTILITY FIT"},
-{id:11,name:"Chrome Hardware Belt",cat:"ACCESSORIES",price:28,img:"https://images.unsplash.com/photo-1624222247344-550fb8d3b5f1?auto=format&fit=crop&w=800&q=85",tag:"METAL DETAIL"},
-{id:12,name:"Graveyard Racer Jacket",cat:"OUTERWEAR",price:96,img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=85",tag:"STATEMENT PIECE"}
+{id:1,name:"Void Ember Hoodie",cat:"HOODIES",price:78,img:"assets/products/void-ember-hoodie.jpg",tag:"FIRST DROP"},
+{id:2,name:"Spectral Tee",cat:"TEES",price:42,img:"assets/products/spectral-tee.jpg",tag:"GRAPHIC / 001"},
+{id:3,name:"Shadow Zip Hoodie",cat:"HOODIES",price:86,img:"assets/products/shadow-zip-hoodie.jpg",tag:"CHROME DETAIL"},
+{id:4,name:"Blade Cargo Pants",cat:"PANTS",price:92,img:"assets/products/blade-cargo-pants.jpg",tag:"UTILITY FIT"},
+{id:5,name:"Revenant Jacket",cat:"OUTERWEAR",price:104,img:"assets/products/revenant-jacket.jpg",tag:"STATEMENT PIECE"},
+{id:6,name:"Decay Beanie",cat:"ACCESSORIES",price:26,img:"assets/products/decay-beanie.jpg",tag:"LIMITED ACCESSORY"}
 ];
 let current="ALL",bag=[];
 const money=n=>"£"+n.toFixed(2);
