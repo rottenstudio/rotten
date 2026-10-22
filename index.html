@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="RØTTEN — Y2K-inspired streetwear for a new generation.">
+<title>RØTTEN — Wear What's Rotten</title>
+<style>
+:root{--bg:#080808;--panel:#111;--line:#303030;--text:#f2f0eb;--muted:#a3a3a3;--acid:#d9ff3f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 36px));margin:auto}.eyebrow{font-size:10px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}.chrome{font-weight:950;font-style:italic;letter-spacing:-.09em;background:linear-gradient(180deg,#fff 5%,#8c929c 35%,#fff 48%,#555b66 65%,#dfe1e7 90%);color:transparent;background-clip:text;-webkit-background-clip:text}.topline{border-bottom:1px solid var(--line);padding:9px 18px;text-align:center;font-size:9px;letter-spacing:.22em;color:#c8c8c8}.header{border-bottom:1px solid var(--line)}.headrow{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}.logo{font-size:clamp(38px,6vw,66px);line-height:.85}.tagline{margin-top:8px}.bagbtn,.outline{border:1px solid #777;background:transparent;color:var(--text);padding:12px 16px;font-size:10px;letter-spacing:.15em;text-transform:uppercase}.bagbtn:hover,.outline:hover{background:#eee;color:#111}.nav{display:flex;gap:24px;flex-wrap:wrap;padding:0 0 15px}.nav button{background:none;border:0;color:#aaa;font-size:10px;letter-spacing:.15em;text-transform:uppercase;padding:4px 0}.nav button:hover,.nav button.active{color:#fff}.hero{min-height:500px;display:flex;align-items:center;padding:50px clamp(22px,5vw,70px);background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.42)),url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1800&q=85') center 40%/cover;border-bottom:1px solid var(--line)}.hero-inner{max-width:650px}.hero h1{font-size:clamp(54px,10vw,110px);line-height:.82;margin:18px 0}.hero p{max-width:420px;line-height:1.7;color:#ccc;font-size:14px}.acid{color:var(--acid)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;padding:30px 0 20px;border-bottom:1px solid var(--line)}h2{font-size:clamp(23px,4vw,36px);font-style:italic;text-transform:uppercase;margin:8px 0 0}.filters{display:flex;flex-wrap:wrap;gap:8px;padding:22px 0}.filter{border:1px solid #333;background:transparent;color:#bbb;padding:9px 12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.filter.active{background:#eee;color:#111;border-color:#eee}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{border:1px solid #292929;background:#101010;min-width:0;transition:transform .2s,border-color .2s}.product:hover{transform:translateY(-3px);border-color:#777}.photo{position:relative;display:block;width:100%;padding:0;border:0;background:#171717;aspect-ratio:4/4.7;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(35%);transition:transform .35s}.product:hover .photo img{transform:scale(1.04)}.tag{position:absolute;top:12px;left:12px;background:var(--acid);color:#111;padding:5px 7px;font-size:9px;letter-spacing:.1em}.pinfo{padding:14px}.pinfo h3{font-size:13px;margin:9px 0 12px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-size:14px}.add{background:transparent;color:#eee;border:1px solid #666;padding:9px 10px;font-size:10px;letter-spacing:.1em}.add:hover{background:#eee;color:#111}.campaign{margin:48px 0;min-height:300px;padding:clamp(25px,5vw,60px);display:flex;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1500&q=85') center/cover}.campaign h2{font-size:clamp(35px,6vw,65px);line-height:.95}.manifesto{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:34px 0 45px}.manifesto h3{font-style:italic}.manifesto p{color:var(--muted);font-size:12px;line-height:1.7}.footer{border-top:1px solid var(--line);padding:26px 0 34px}.footrow{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.tiny{font-size:10px;color:#999}.cartback{position:fixed;inset:0;background:#000c;z-index:10;display:none;justify-content:flex-end}.cartback.open{display:flex}.cart{width:min(440px,100%);height:100%;overflow:auto;background:#111;border-left:1px solid #555;padding:24px}.carthead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.cartline{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}.cartline img{width:82px;height:100px;object-fit:cover}.cartline .details{flex:1}.qtyrow{display:flex;align-items:center;gap:10px;margin-top:12px}.qtyrow button{background:none;color:white;border:1px solid #555;padding:5px 10px}.remove{border:0!important;text-decoration:underline;color:#aaa!important;margin-left:auto}.subtotal{display:flex;justify-content:space-between;padding:18px 0}.full{width:100%}.notice{font-size:11px;color:var(--acid);line-height:1.6;margin-top:12px}.empty{padding:30px 0;color:#aaa;font-size:13px}.mobilehint{display:none}
+@media(max-width:720px){.wrap{width:calc(100% - 24px)}.headrow{padding:16px 0}.headrow .eyebrow{display:none}.hero{min-height:420px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pinfo{padding:10px}.pinfo h3{font-size:12px}.add{padding:8px 7px}.section-head{align-items:start}.manifesto{grid-template-columns:1fr;gap:5px}.campaign{min-height:260px;margin:32px 0}.nav{gap:17px}.mobilehint{display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.lookbook{padding:12px 0 42px}
+.lookbook-frame{display:block;border:1px solid #343434;background:#090909;overflow:hidden}
+.lookbook-frame img{display:block;width:100%;height:auto}
+.lookbook-caption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px 0;color:#aaa;font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+
+</style>
+</head>
+<body>
+<div class="topline">Y2K CLOTHING FOR A NEW GENERATION · FIRST DROP / 001 · SIX NEW PIECES ADDED</div>
+<header class="header"><div class="wrap">
+ <div class="headrow">
+  <div><a class="logo chrome" href="#" aria-label="RØTTEN home">RØTTEN</a><div class="eyebrow tagline">WEAR WHAT'S RØTTEN™</div></div>
+  <div class="eyebrow" style="text-align:right">INDEPENDENT STREETWEAR<br>EST. MMXXVI</div>
+  <button class="bagbtn" id="openBag">BAG (<span id="bagCount">0</span>) ↗</button>
+ </div>
+ <nav class="nav" aria-label="Shop categories"><button class="active" data-nav="ALL">Shop all</button><button data-nav="TEES">Tees</button><button data-nav="HOODIES">Hoodies</button><button data-nav="DENIM">Denim</button><button data-nav="PANTS">Pants</button><button data-nav="OUTERWEAR">Outerwear</button><button data-nav="ACCESSORIES">Accessories</button><a href="#manifesto" style="margin-left:auto" class="eyebrow">The manifesto ↘</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow"><span class="acid">●</span> NEW SEASON / 001</div><h1 class="chrome">NOT MADE<br>TO FIT IN.</h1><p>For the ones who never followed the dress code. Throwback silhouettes. Underground energy. Your rules.</p><button class="outline" id="shopNow">Explore the drop ↘</button></div></section>
+<section class="wrap" id="shop"><div class="section-head"><div><div class="eyebrow acid">CURATED FOR THE CHRONICALLY ONLINE</div><h2>The Rot List <span style="color:#555">/ 001</span></h2></div><div class="eyebrow">ORIGINAL ENERGY.<br>NO RULES.</div></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="ALL">All pieces</button><button class="filter" data-filter="TEES">Graphic tees</button><button class="filter" data-filter="HOODIES">Hoodies</button><button class="filter" data-filter="DENIM">Denim</button><button class="filter" data-filter="PANTS">Pants</button><button class="filter" data-filter="OUTERWEAR">Outerwear</button><button class="filter" data-filter="ACCESSORIES">Accessories</button></div>
+<div class="products" id="products"></div><p class="empty" id="empty" hidden>No pieces in this category yet.</p></section>
+<section class="wrap"><div class="campaign"><div><div class="eyebrow acid">A LITTLE WRONG LOOKS RIGHT.</div><h2>Your era.<br>Your uniform.</h2><p class="tiny">Your style. Your scene. Your rules.</p><button class="outline" id="campaignShop">Find your fit ↗</button></div></div></section>
+
+<section class="wrap lookbook" id="collection-concepts">
+  <div class="section-head">
+    <div><div class="eyebrow acid">DESIGN STUDY / 001</div><h2>The RØTTEN concept archive</h2></div>
+    <div class="eyebrow">SIX ORIGINAL CONCEPTS<br>BLACK / CHROME / DISTRESSED</div>
+  </div>
+  <a class="lookbook-frame" href="assets/rotten-collection-lookbook.png" target="_blank" rel="noopener" aria-label="Open the full RØTTEN collection lookbook">
+    <img src="assets/rotten-collection-lookbook.png" alt="RØTTEN design concept lookbook featuring six dark Y2K streetwear pieces: hoodie, graphic T-shirt, zip hoodie, cargo pants, jacket and beanie." loading="lazy">
+  </a>
+  <div class="lookbook-caption"><span>RØTTEN STUDIO · COLLECTION CONCEPTS</span><span>Tap image to view full size ↗</span></div>
+</section>
+
+<section class="wrap" id="manifesto"><div class="eyebrow acid">THE RØTTEN MANIFESTO</div><div class="manifesto"><article><h3>01 / REBEL</h3><p>Dress like nobody gets to tell you who to be.</p></article><article><h3>02 / REPEAT</h3><p>Archive-inspired fits for the next generation.</p></article><article><h3>03 / REDEFINE</h3><p>Your style. Your scene. Your rules.</p></article></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footrow"><a href="#" class="chrome" style="font-size:34px">RØTTEN</a><span class="eyebrow">WEAR WHAT'S RØTTEN™</span><span class="tiny">FIRST DROP / 001</span></div><p class="tiny" style="margin-top:24px">© 2026 RØTTEN STUDIO · INDEPENDENT BY DESIGN.</p><p class="tiny">Store demo: products, cart and filters work locally. Checkout and payments are not connected yet.</p></div></footer>
+</body>
+<div class="cartback" id="cartBack" role="dialog" aria-modal="true" aria-label="Shopping bag"><aside class="cart"><div class="carthead"><h2 style="margin:0">Your bag <span class="acid" id="cartCount">[0]</span></h2><button class="outline" id="closeBag">Close ×</button></div><div id="cartItems"></div><div class="subtotal"><span>Subtotal</span><strong id="subtotal">£0.00</strong></div><p class="tiny">Shipping and taxes are calculated at checkout.</p><button class="outline full" id="checkout">Continue to checkout ↗</button><p class="notice" id="cartNote">This is a preview store. Checkout must be connected before taking real orders.</p></aside></div>
+<script>
+const catalog=[
+{id:1,name:"After Dark Tee",cat:"TEES",price:32,img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85",tag:"FIRST DROP"},
+{id:2,name:"Rotten Angel Hoodie",cat:"HOODIES",price:68,img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85",tag:"BESTSELLER"},
+{id:3,name:"Low Rise Baggy Denim",cat:"DENIM",price:76,img:"https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85",tag:"ARCHIVE FIT"},
+{id:4,name:"No Signal Tee",cat:"TEES",price:32,img:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=85",tag:"NEW"},
+{id:5,name:"Chrome Star Shoulder Bag",cat:"ACCESSORIES",price:42,img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85",tag:"LIMITED"},
+{id:6,name:"Nightshift Cargo Pants",cat:"DENIM",price:68,img:"https://images.unsplash.com/photo-1511196044526-5cb3bcb7071b?auto=format&fit=crop&w=800&q=85",tag:"UTILITY"},
+{id:7,name:"Static Burn Long Sleeve",cat:"TEES",price:38,img:"https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=85",tag:"NEW DROP"},
+{id:8,name:"Fallen Angel Zip Hoodie",cat:"HOODIES",price:76,img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85",tag:"CHROME PRINT"},
+{id:9,name:"Ripped Black Denim",cat:"DENIM",price:84,img:"https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=85",tag:"DISTRESSED"},
+{id:10,name:"Night Terror Cargo Trousers",cat:"PANTS",price:72,img:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85",tag:"UTILITY FIT"},
+{id:11,name:"Chrome Hardware Belt",cat:"ACCESSORIES",price:28,img:"https://images.unsplash.com/photo-1624222247344-550fb8d3b5f1?auto=format&fit=crop&w=800&q=85",tag:"METAL DETAIL"},
+{id:12,name:"Graveyard Racer Jacket",cat:"OUTERWEAR",price:96,img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=85",tag:"STATEMENT PIECE"}
+];
+let current="ALL",bag=[];
+const money=n=>"£"+n.toFixed(2);
+const $=id=>document.getElementById(id);
+function drawProducts(){const shown=catalog.filter(p=>current==="ALL"||p.cat===current);$("products").innerHTML=shown.map(p=>`<article class="product"><button class="photo" data-view="${p.id}" aria-label="View ${p.name}"><span class="tag">${p.tag}</span><img loading="lazy" src="${p.img}" alt="${p.name}" onerror="this.style.opacity='.15'"></button><div class="pinfo"><div class="eyebrow">${p.cat} / RØTTEN STUDIO</div><h3>${p.name}</h3><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" data-add="${p.id}">+ BAG</button></div></div></article>`).join("");$("empty").hidden=shown.length>0}
+function drawBag(){$("bagCount").textContent=bag.reduce((s,p)=>s+p.qty,0);$("cartCount").textContent="["+bag.reduce((s,p)=>s+p.qty,0)+"]";$("subtotal").textContent=money(bag.reduce((s,p)=>s+p.price*p.qty,0));$("cartItems").innerHTML=bag.length?bag.map(p=>`<div class="cartline"><img src="${p.img}" alt=""><div class="details"><strong>${p.name}</strong><div class="tiny" style="margin-top:8px">${money(p.price)} each</div><div class="qtyrow"><button data-qty="${p.id}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${p.qty}</span><button data-qty="${p.id}" data-delta="1" aria-label="Increase quantity">+</button><button class="remove" data-remove="${p.id}">Remove</button></div></div></div>`).join(""):'<div class="empty">Your bag is empty. Find your next favourite.</div>'}
+function setFilter(f){current=f;document.querySelectorAll("[data-filter]").forEach(b=>b.classList.toggle("active",b.dataset.filter===f));document.querySelectorAll("[data-nav]").forEach(b=>b.classList.toggle("active",b.dataset.nav===f));drawProducts()}
+function openBag(){$("cartBack").classList.add("open");drawBag();$("closeBag").focus()}
+function closeBag(){$("cartBack").classList.remove("open");$("openBag").focus()}
+document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>setFilter(b.dataset.filter)));
+document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{setFilter(b.dataset.nav);$("shop").scrollIntoView({behavior:"smooth"})}));
+$("shopNow").onclick=()=>$("shop").scrollIntoView({behavior:"smooth"});
+$("campaignShop").onclick=()=>{setFilter("ALL");$("shop").scrollIntoView({behavior:"smooth"})};
+$("openBag").onclick=openBag;$("closeBag").onclick=closeBag;
+$("cartBack").addEventListener("click",e=>{if(e.target===$("cartBack"))closeBag()});
+$("products").addEventListener("click",e=>{const add=e.target.closest("[data-add]");if(add){const p=catalog.find(x=>x.id===Number(add.dataset.add));const inBag=bag.find(x=>x.id===p.id);inBag?inBag.qty++:bag.push({...p,qty:1});drawBag();add.textContent="ADDED ✓";setTimeout(()=>{if(add.isConnected)add.textContent="+ BAG"},850)}const view=e.target.closest("[data-view]");if(view){const p=catalog.find(x=>x.id===Number(view.dataset.view));$("cartNote").textContent=p.name+" selected. Choose + BAG on the product card to add it.";openBag()}});
+$("cartItems").addEventListener("click",e=>{const q=e.target.closest("[data-qty]"),r=e.target.closest("[data-remove]");if(q){const p=bag.find(x=>x.id===Number(q.dataset.qty));p.qty+=Number(q.dataset.delta);if(p.qty<1)bag=bag.filter(x=>x.id!==p.id)}if(r)bag=bag.filter(x=>x.id!==Number(r.dataset.remove));drawBag()});
+$("checkout").onclick=()=>{$("cartNote").textContent=bag.length?"Checkout is not connected in this demo. To accept payments, connect a store platform or payment provider.":"Your bag is empty — find something you love first."};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("cartBack").classList.contains("open"))closeBag()});
+drawProducts();drawBag();
+</script>
+</html>
